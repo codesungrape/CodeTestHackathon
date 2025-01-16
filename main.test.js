@@ -2,6 +2,10 @@ import { describe, test, expect } from "vitest";
 import removeVowels from "./main";
 
 describe("removeVowels()", () => {
+  test("If missing string input it throws an ERROR message: 'Input string is required!'", () => {
+    const expected = "Input string is required!";
+    expect(() => removeVowels()).toThrowError(expected);
+  });
   test("Checks empty input and returns ERROR message: 'There is nothing to remove!'", () => {
     const input = "";
     const actual = removeVowels(input);
