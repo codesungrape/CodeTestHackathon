@@ -1,5 +1,8 @@
 /*
-This is a series of string challemges to help you get to grips with JS string methods! For other in the series go here: 
+PLEASE CHECK PROJECT_PRESENTATION.md for setup instructions :)
+
+
+This is a series of string challemges to help you get to grips with JS string methods!  
 
 Hello again challenger! This time your task is to write a function named `removeVowels` which takes in a string and returns the string with all vowels removed. 
 - If input is an empty string, it should return the message "There is nothing to remove!". 
