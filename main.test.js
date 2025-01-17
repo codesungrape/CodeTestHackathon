@@ -26,11 +26,14 @@ describe("removeVowels()", () => {
   ])("removeVowels(%s) -> %s", (input, expected) => {
     expect(removeVowels(input)).toBe(expected);
   });
-  test("testing complex string", () => {
-    const input = "I enjoy solving coding challenges daily.";
-    const actual = removeVowels(input);
-    const expected = " njy slvng cdng chllngs dly.";
-    expect(actual).toBe(expected);
+  // Test section below tests complex strings
+  test.each([
+    [
+      "I enjoy solving coding challenges daily.",
+      " njy slvng cdng chllngs dly.",
+    ],
+  ])("removeVowels(%s) -> %s", (input, expected) => {
+    expect(removeVowels(input)).toBe(expected);
   });
   test("Checking case-sensitivity and insensitivity", () => {
     const input = "AEIOU are vowels.";
